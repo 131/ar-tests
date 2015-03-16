@@ -7,7 +7,6 @@ window.addEventListener("AR_END", end);
 
 $(document).ready(function(){
   setTimeout(function(){
-    $(window).trigger("AR_BEGIN");
     window.dispatchEvent(new Event("AR_BEGIN"));
 
     $("#drawing").addClass("animate");
